@@ -1,0 +1,95 @@
+body{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.m-slides{
+	position: relative;
+	top: 50%;
+	left: 50%;
+	width: 960px;
+	height: 420px;
+	overflow: hidden;
+	transform: translate(-50%, 50%);
+}
+
+.m-slides ol, .img li{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+
+.img li{
+	left: -100%;
+	opacity: 0;
+	-webkit-transition: 0.5s ease-out;
+	-moz-transition: 0.5s ease-out;
+	-ms-transition: 0.5s ease-out;
+	transition: 0.5s ease-out;
+	-webkit-transition-property: opacity, left;
+	-moz-transition-property: opacity, left;
+	-ms-transition-property: opacity, left;
+	transition-property: opacity, left;
+}
+
+.img li.active{
+	left: 0;
+	opacity: 1;
+	z-index: 5;
+}
+
+.img li.active ~ li{
+	left: 100%;
+}
+
+.pointctl{
+	position: absolute;
+	bottom: 40px;
+	left: 50%;
+	width: 60%;
+	height: 12px;
+	margin-left: -30%;
+	text-align: center;
+	list-style: none;
+	z-index: 10;
+}
+
+.pointctl li{
+	display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 1px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+
+.pointctl .active{
+	width: 12px;
+    height: 12px;
+    margin: 0;
+    background-color: gray;
+}
+
+.banner-0{
+	background: url(img/banner_00.jpg);
+}
+
+.banner-1{
+	background: url(img/banner_01.jpg);
+}
+
+.banner-2{
+	background: url(img/banner_02.jpg);
+}
+
+.banner-3{
+	background: url(img/banner_03.jpg);
+}
