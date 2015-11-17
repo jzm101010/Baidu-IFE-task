@@ -1,0 +1,33 @@
+body{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: gray;
+}
+
+#leftdiv, #rightdiv{
+	display: inline-block;
+	position: relative;
+	margin-top: 10%;
+	width: 360px;
+	height: 720px;
+	background-color: white;
+}
+
+#leftdiv{
+	left: 20%;
+}
+
+#rightdiv{
+	left: 40%;
+}
+
+#leftdiv div, #rightdiv div{
+	float: left;
+	width: 100%;
+	height: 10%;
+	cursor: pointer;
+	background-color: red;
+	border-bottom: 1px solid black;
+}
