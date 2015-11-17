@@ -2,13 +2,13 @@ window.onload = InitPage();
 
 function InitPage() {
 	var div = document.getElementsByTagName('div')[0];
-	slide(div, false, true, 5000);
+	slide(div, true, true, 5000);
 }
 
-function slide(elm, sequence, loop, time){
-	var	NOW = 0,
-		count = 0,
-		img = elm.getElementsByTagName('ol')[0].getElementsByTagName('li'),
+function slide(elm, sequence, loop, time){												//第一个参数为图片列表的父元素，
+	var	NOW = 0,																		//第二个参数控制顺序，true为正序，false为逆序
+		count = 0,																		//第三个参数控制是否循环
+		img = elm.getElementsByTagName('ol')[0].getElementsByTagName('li'),				//第四个参数控制间隔时间
 		imgNum = img.length;
 
 	var pointctl = elm.getElementsByTagName('div')[0];
