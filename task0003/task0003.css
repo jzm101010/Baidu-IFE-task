@@ -1,0 +1,131 @@
+html,body{height: 100%;overflow: hidden;font-family: 'Microsoft YaHei', 'SimHei', 'STHeiti', sans-serif;}
+ul{padding: 0;list-style:none;}
+
+
+
+.g-hd{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 70px;
+	border-right: 1px solid rgb(90, 113, 198);
+	background-color: rgba(90, 113, 198, 0.85);
+	box-shadow: 1px 0 3px rgba(0, 0, 0, 0.35);
+}
+
+.g-hd h1{
+	margin: 15px 5px;
+	color: 
+}
+
+.g-bd{
+	position: absolute;
+	top: 70px;
+	left: 0;
+	right: 0;
+	height: inherit;
+}
+
+.g-bd>div{
+	float: left;
+	margin: 0;
+	padding: 0;
+	height: inherit;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; 
+	-webkit-box-sizing:border-box;
+	box-shadow: 1px 0 3px rgba(0, 0, 0, 0.35); 
+}
+
+.m-first-menu{
+	position: relative;
+	width: 15%;
+	border-right: 1px solid rgb(157, 164, 215);
+	background-color: rgba(157, 164, 215, 0.85);
+}
+
+.m-second-menu{
+	position: relative;
+	width: 12%;
+	font-size: 0.9em;
+	border-right: 1px solid rgb(157, 164, 215);
+	background-color: rgba(157, 164, 215, 0.65);
+}
+
+.m-content{
+	position: relative;
+	width: 73%;
+	background-color: rgba(148, 162, 179, 0.34);
+}
+
+.m-first-menu div, .m-second-menu div{
+	margin-left: 5%;
+	margin-top: 2%;
+}
+
+.m-first-menu li, .m-second-menu li{
+	margin-left: 8%;
+	margin-top: 2%;
+	cursor: pointer;
+}
+
+.m-second-menu .task{
+
+}
+
+.u-summary{
+	margin: 5%; 
+	cursor: pointer;
+}
+
+.u-status, .u-head{
+	margin: 0 !important;
+	padding-top: 5%;
+	height: 50px;
+	border-bottom: 1px solid rgb(157, 164, 215);
+	background-color: rgba(157, 164, 215, 0.65);
+}
+
+.u-status div{
+	display: inline-block;
+	margin-left: 5%;
+	cursor: pointer;
+}
+
+.u-head{
+	padding: 0;
+}
+
+.u-head p{
+	padding: 1%;
+	margin: 0;
+	font-weight: bold;
+}
+
+.u-content .tasktime{
+	padding: 1%;
+	background-color: rgba(191, 195, 229, 0.55);
+	border-bottom: 1px solid rgb(191, 195, 229);
+}
+
+.u-content .content{
+	padding: 1%;
+	background-color: rgba();
+}
+
+.u-addlist, .u-addtask{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	margin: 0 !important;
+	height: 15%;
+	font-size: 20px;
+	cursor: pointer;
+	vertical-align:middle;
+	text-align: center;
+	border-top: 1px solid rgb(90, 113, 198);
+	background-color: rgba(90, 113, 198, 0.65);
+	box-shadow: 1px 0 3px rgba(0, 0, 0, 0.35);
+}
+
